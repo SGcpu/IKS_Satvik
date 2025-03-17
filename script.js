@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Dark Mode Toggle with Local Storage
     const themeToggle = document.getElementById("theme-toggle-icon");
-    if (localStorage.getItem("dark-mode") === "enabled") {
+    if (!localStorage.getItem("dark-mode") || localStorage.getItem("dark-mode") === "enabled") {
         document.body.classList.add("dark-mode");
         themeToggle.classList.remove("fa-moon");
         themeToggle.classList.add("fa-sun");
+        localStorage.setItem("dark-mode", "enabled");
     }
     
     themeToggle.addEventListener("click", function () {
