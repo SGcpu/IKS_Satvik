@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satvik Aahar - Pure & Wholesome Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Satvik Aahar</h1>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-toggle-icon"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-text" class="particles-text-container"></div>
+        <div class="particles-text-overlay">Satvik Aahar</div>
+        <div class="hero-content"><br><br><br><br><br>
+            <h1>Discover the Purity of Satvik Aahar</h1>
+            <p>Embrace a diet that nourishes your body, mind, and spirit with pure, wholesome ingredients prepared with
+                traditional wisdom.</p>
+            <button class="cta-button">Begin Your Journey</button>
+        </div>
+    </section>
+
+    <!-- Floating Search Button -->
+    <div class="search-button">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <input type="text" placeholder="Search ingredients or utensils...">
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="search-results">
+            <!-- Search results will appear here -->
+        </div>
+    </div>
+
+    <!-- Ingredients Carousel Section -->
+    <section class="section ingredients-section" id="ingredients">
+        <h2>Satvik Ingredients</h2>
+        <p>Explore pure, natural ingredients that form the foundation of Satvik Aahar</p>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item" data-category="grains">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Grains & Cereals">
+                        </div>
+                        <h3>Grains & Cereals</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Grains & Cereals – Energy & Digestion</h4>
+                        <ul>
+                            <li><strong>Rice</strong> – Easily digestible, provides quick energy, cooling for the body.
+                            </li>
+                            <li><strong>Whole Wheat</strong> – Rich in fiber, aids digestion, and provides sustained
+                                energy.</li>
+                            <li><strong>Millets</strong> (Ragi, Jowar, Bajra, etc.) – High in fiber, regulates blood
+                                sugar, and boosts immunity.</li>
+                            <li><strong>Barley</strong> (Jau) – Detoxifies the body, helps in weight loss, and improves
+                                digestion.</li>
+                            <li><strong>Poha</strong> (Flattened Rice) – Light on digestion, rich in iron, and provides
+                                quick energy.</li>
+                        </ul>
+                        <p><strong>Uses:</strong> Khichdi, pulao, plain rice, kheer, roti, puri, upma, halwa, dosa,
+                            porridge</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="pulses">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Pulses & Legumes">
+                        </div>
+                        <h3>Pulses & Legumes</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Pulses & Legumes – Protein & Muscle Growth</h4>
+                        <ul>
+                            <li><strong>Moong Dal</strong> – Easiest dal to digest, rich in protein, good for gut
+                                health.</li>
+                            <li><strong>Masoor Dal</strong> – High in iron, helps in blood formation, and boosts
+                                metabolism.</li>
+                            <li><strong>Toor Dal</strong> – Good source of protein, supports heart health.</li>
+                            <li><strong>Chana Dal</strong> – Rich in fiber and protein, supports digestion.</li>
+                            <li><strong>Urad Dal</strong> – Strengthens bones and nervous system, improves digestion.
+                            </li>
+                        </ul>
+                        <p><strong>Uses:</strong> Dal, khichdi, dosa, soups, sambhar, chilla, idli</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="dairy">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Dairy Products">
+                        </div>
+                        <h3>Dairy Products</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Dairy Products – Strength, Immunity & Brain Health</h4>
+                        <ul>
+                            <li><strong>Milk</strong> – Strengthens bones, nourishes the brain, and provides energy.
+                            </li>
+                            <li><strong>Curd</strong> (Dahi) – Aids digestion, cools the body, and supports gut
+                                bacteria.</li>
+                            <li><strong>Ghee</strong> – Boosts brain function, lubricates joints, enhances digestion.
+                            </li>
+                            <li><strong>Paneer</strong> (Cottage Cheese) – Rich in protein and calcium, good for muscle
+                                building.</li>
+                        </ul>
+                        <p><strong>Uses:</strong> Kheer, sweets, herbal drinks, buttermilk, kadhi, raita, cooking,
+                            tempering, Ayurvedic remedies, subzis</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="vegetables">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Vegetables">
+                        </div>
+                        <h3>Vegetables</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Vegetables – Detox, Immunity & Cooling</h4>
+                        <ul>
+                            <li><strong>Lauki</strong> (Bottle Gourd) – Hydrating, good for digestion, reduces acidity.
+                            </li>
+                            <li><strong>Tinda</strong> (Apple Gourd) – Cooling effect, good for skin health.</li>
+                            <li><strong>Pumpkin</strong> (Kaddu) – High in Vitamin A, good for eyesight and immunity.
+                            </li>
+                            <li><strong>Carrot</strong> (Gajar) – Improves vision, purifies blood, rich in antioxidants.
+                            </li>
+                            <li><strong>Beetroot</strong> – Boosts blood circulation, increases hemoglobin.</li>
+                            <li><strong>Cabbage & Capsicum</strong> – Rich in Vitamin C, strengthens immunity.</li>
+                            <li><strong>Ash Gourd</strong> (Petha) – Detoxifies the body, good for mental clarity.</li>
+                            <li><strong>Cucumber</strong> (Kheera) – Hydrates, cools the body, and flushes out toxins.
+                            </li>
+                        </ul>
+                        <p><strong>Uses:</strong> Juice, sabzi, halwa, soup, salad, raita, stir-fry, curries</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="fruits">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Fruits">
+                        </div>
+                        <h3>Fruits</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Fruits – Vitamins, Energy & Antioxidants</h4>
+                        <ul>
+                            <li><strong>Banana</strong> – Instant energy booster, rich in potassium for heart health.
+                            </li>
+                            <li><strong>Apple, Pear, Guava</strong> – Rich in fiber, improves digestion and boosts
+                                immunity.</li>
+                            <li><strong>Mango</strong> (Seasonal) – Rich in Vitamin A and antioxidants, good for skin.
+                            </li>
+                            <li><strong>Dates, Raisins, Figs</strong> – Natural sweeteners, provide iron and energy.
+                            </li>
+                            <li><strong>Coconut</strong> – Strengthens immunity, good for digestion and skin.</li>
+                        </ul>
+                        <p><strong>Uses:</strong> Eaten raw, shakes, halwa, desserts, aamras, juice, smoothies, snacks,
+                            chutneys, sweets, garnishing</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="sweeteners">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Natural Sweeteners">
+                        </div>
+                        <h3>Natural Sweeteners</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Natural Sweeteners – Better than Sugar, Provide Energy</h4>
+                        <ul>
+                            <li><strong>Jaggery</strong> (Gud) – Purifies blood, improves digestion, rich in iron.</li>
+                            <li><strong>Mishri</strong> (Rock Sugar) – Cooling effect, good for throat and digestion.
+                            </li>
+                            <li><strong>Honey</strong> (Raw, Unheated) – Natural antibacterial, boosts immunity, and
+                                aids digestion.</li>
+                        </ul>
+                        <p><strong>Uses:</strong> Sweets, herbal drinks, cooling drinks, herbal remedies</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="nuts">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Nuts & Seeds">
+                        </div>
+                        <h3>Nuts & Seeds</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Nuts & Seeds – Brain & Heart Health</h4>
+                        <ul>
+                            <li><strong>Almonds, Cashews, Walnuts</strong> – Improve memory, brain function, and
+                                strengthen bones.</li>
+                            <li><strong>Flaxseeds, Sesame Seeds, Sunflower Seeds</strong> – Rich in Omega-3, good for
+                                heart health.</li>
+                            <li><strong>Chia Seeds, Basil Seeds</strong> (Sabja) – Cooling, hydrating, and good for
+                                digestion.</li>
+                        </ul>
+                        <p><strong>Uses:</strong> Snacks, sweets, milkshakes, chutneys, ladoos, cooling drinks,
+                            smoothies</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-category="herbs">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/api/placeholder/200/200" alt="Herbs & Spices">
+                        </div>
+                        <h3>Herbs & Spices</h3>
+                    </div>
+                    <div class="card-details">
+                        <h4>Herbs & Spices – Detox, Immunity & Digestion</h4>
+                        <ul>
+                            <li><strong>Turmeric</strong> (Haldi) – Natural anti-inflammatory, boosts immunity.</li>
+                            <li><strong>Coriander</strong> (Dhaniya) – Cools the body, helps in digestion.</li>
+                            <li><strong>Cumin</strong> (Jeera) – Improves gut health, reduces bloating.</li>
+                            <li><strong>Black Pepper</strong> (Kali Mirch) – Aids digestion, enhances metabolism.</li>
+                            <li><strong>Ginger</strong> (Adrak) – Boosts immunity, relieves nausea and cold.</li>
+                            <li><strong>Cardamom</strong> (Elaichi) – Improves digestion, freshens breath.</li>
+                        </ul>
+                        <p><strong>Uses:</strong> Healing, anti-inflammatory, cooling, digestion-friendly, tempering,
+                            herbal teas, fragrance</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utensils Knowledge Base Section -->
+    <section class="section utensils-section" id="utensils">
+        <h2>Satvik Utensils</h2>
+        <p>Traditional utensils that enhance the purity and nutritional value of your food</p>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Clay Pots">
+                    <h3>Clay Pots (Earthenware)</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Clay Pots">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Natural and porous, allowing slow, even cooking.</li>
+                                <li>Enhances the natural taste of food.</li>
+                                <li>Retains the prana (life energy) in food.</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Preserves essential minerals like iron, calcium, magnesium.</li>
+                                <li>Alkalizes food, balancing pH levels and reducing acidity.</li>
+                                <li>Aids digestion and improves gut health.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Khichdi (Rice and moong dal cooked with mild spices)</li>
+                                <li>Sabzi (Mixed vegetables cooked with minimal spices)</li>
+                                <li>Dahi (Curd) & Buttermilk (Clay pots help retain natural probiotics)</li>
+                                <li>Dal (Lentil Soup)</li <li>(Slow-cooked for better taste and nutrition)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Brass Utensils">
+                    <h3>Brass (Pital) Utensils</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Brass Utensils">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Retains heat well and enhances flavor.</li>
+                                <li>Reacts with tamarind and acidic foods, so requires a tin coating (kalai).</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Rich in zinc and copper, which boost immunity.</li>
+                                <li>Helps in the absorption of iron from food.</li>
+                                <li>Improves skin health and digestion.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Rice (Cooking rice in brass utensils gives it a unique taste)</li>
+                                <li>Doodh Haldi (Turmeric Milk) (Brass vessels help enhance medicinal properties)</li>
+                                <li>Kheer (Rice Pudding) (Slow-cooked for a rich flavor)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Bronze Utensils">
+                    <h3>Bronze (Kansa) Utensils</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Bronze Utensils">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Traditionally used for eating food.</li>
+                                <li>Kills harmful microbes and bacteria.</li>
+                                <li>Considered spiritually pure in Ayurveda.</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Enhances gut health and improves digestion.</li>
+                                <li>Reduces acidity and detoxifies the body.</li>
+                                <li>Improves hemoglobin levels.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Chapati, Sabzi, Dal, and Rice served on a kansa plate</li>
+                                <li>Kansa glasses for drinking water or milk</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Iron Utensils">
+                    <h3>Iron or Cast Iron Kadai & Tava</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Iron Utensils">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Naturally fortifies food with iron.</li>
+                                <li>Makes food tastier and enhances texture.</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Prevents anemia by increasing hemoglobin.</li>
+                                <li>Strengthens bones and muscles.</li>
+                                <li>Improves energy levels.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Roti / Chapati (Made on an iron tava enhances iron intake)</li>
+                                <li>Saag (Leafy Greens) (Spinach, methi, or mustard greens cooked in an iron kadai)</li>
+                                <li>Upma / Poha (Cooked in an iron pan for a wholesome breakfast)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Wooden Utensils">
+                    <h3>Wooden Utensils</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Wooden Utensils">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Does not react with food, unlike metal or plastic.</li>
+                                <li>Gentle on cookware and does not scratch surfaces.</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Maintains the purity of food by preventing chemical reactions.</li>
+                                <li>Preserves the natural taste and nutrients in food.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Churning buttermilk (Mathani – wooden churner) for natural probiotics</li>
+                                <li>Mixing atta (dough) in a wooden bowl for soft chapatis</li>
+                                <li>Stirring and serving food</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Stone Utensils">
+                    <h3>Stone Silbatta (Grinding Stone)</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Stone Utensils">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Used for grinding fresh spices, chutneys, and masalas.</li>
+                                <li>Avoids heat generation, unlike electric mixers.</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Retains essential oils and nutrients lost in electric grinding.</li>
+                                <li>Enhances digestion and improves metabolism.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Fresh Coconut Chutney</li>
+                                <li>Homemade Masalas (Spice Blends)</li>
+                                <li>Ginger & Tulsi Paste for Herbal Teas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="/api/placeholder/80/80" alt="Banana Leaves">
+                    <h3>Banana Leaves or Leaf Plates</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="utensil-details">
+                        <div class="utensil-image">
+                            <img src="/api/placeholder/300/300" alt="Banana Leaves">
+                        </div>
+                        <div class="utensil-info">
+                            <h4>Why Used?</h4>
+                            <ul>
+                                <li>Considered spiritually pure and used in temples.</li>
+                                <li>Imparts a mild natural flavor to food.</li>
+                            </ul>
+
+                            <h4>Health Benefits</h4>
+                            <ul>
+                                <li>Contains polyphenols (antioxidants) that boost immunity.</li>
+                                <li>Helps digestion and detoxifies the body.</li>
+                            </ul>
+
+                            <h4>Best Used For</h4>
+                            <ul>
+                                <li>Traditional Saatvik Thali (Dal, rice, sabzi, roti, chutney, and sweets served on
+                                    banana leaves)</li>
+                                <li>Prasadam / Bhog offerings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utensils to Avoid Section -->
+    <section class="section avoid-section" id="avoid">
+        <h2>Utensils to Avoid</h2>
+        <p>These utensils may compromise the purity and health benefits of your Satvik food</p>
+
+        <div class="avoid-grid">
+            <div class="avoid-item">
+                <div class="avoid-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h3>Aluminum</h3>
+                <p>Leaches harmful chemicals into food, affecting the brain and digestion.</p>
+            </div>
+
+            <div class="avoid-item">
+                <div class="avoid-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h3>Non-Stick (Teflon Coated)</h3>
+                <p>Releases toxic fumes when heated.</p>
+            </div>
+
+            <div class="avoid-item">
+                <div class="avoid-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h3>Plastic & Melamine</h3>
+                <p>Contains BPA and other chemicals that can harm the body.</p>
+            </div>
+
+            <div class="avoid-item">
+                <div class="avoid-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h3>Microwave Utensils</h3>
+                <p>Alters the molecular structure of food, reducing its sattvic qualities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <h2>About Satvik Aahar</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Satvik Aahar is a traditional dietary philosophy that emphasizes pure, wholesome, and naturally grown
+                    foods that promote physical health, mental clarity, and spiritual well-being.</p>
+                <p>This diet consists of foods that are fresh, nutritious, and prepared with minimally processed
+                    ingredients. It avoids foods that are overly spicy, bitter, sour, or stale, and excludes meat, fish,
+                    eggs, onions, and garlic.</p>
+                <p>By following a Satvik diet, you nourish not just your body but also your mind and spirit, creating
+                    harmony and balance in your overall being.</p>
+            </div>
+            <div class="about-image">
+                <img src="/api/placeholder/400/300" alt="Satvik Food">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Satvik Aahar</h2>
+                <p>Pure & Wholesome Food</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#utensils">Utensils</a></li>
+                    <li><a href="#avoid">What to Avoid</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Satvik Aahar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</body>
+
+</html>
